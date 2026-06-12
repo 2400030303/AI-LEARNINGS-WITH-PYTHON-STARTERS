@@ -1,0 +1,198 @@
+AI DATA VISUALIZATION LIBRARIES NOTES
+
+1. NUMPY
+---------
+
+Definition:
+NumPy stands for Numerical Python.
+It is used for fast mathematical and numerical operations.
+
+Features:
+- Supports arrays
+- Faster than Python lists
+- Used for mathematical calculations
+- Generates random numbers and datasets
+
+Common Functions:
+- np.array()
+- np.mean()
+- np.sum()
+- np.max()
+- np.min()
+- np.random.randint()
+
+Example:
+import numpy as np
+
+arr = np.array([1,2,3,4,5])
+
+print(arr.mean())
+
+Uses in AI:
+- Matrix calculations
+- Neural networks
+- Data generation
+- Mathematical computations
+
+
+2. PANDAS
+----------
+
+Definition:
+Pandas is a data analysis and data handling library.
+
+Main Structures:
+1. Series -> Single column
+2. DataFrame -> Table format
+
+Features:
+- Reads CSV files
+- Handles missing data
+- Filters data
+- Sorts data
+- Analyzes datasets
+
+Common Functions:
+- pd.DataFrame()
+- pd.read_csv()
+- head()
+- tail()
+- describe()
+- info()
+
+Example:
+import pandas as pd
+
+data = {
+    "Name": ["Ram","Sam"],
+    "Marks": [90,85]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+Uses in AI:
+- Data preprocessing
+- Data cleaning
+- Data analysis
+- Dataset handling
+
+
+3. MATPLOTLIB
+--------------
+
+Definition:
+Matplotlib is a visualization library used for creating graphs and charts.
+
+Features:
+- Creates different types of graphs
+- Customizes graphs
+- Adds titles and labels
+
+Types of Graphs:
+- Line Plot
+- Bar Plot
+- Pie Chart
+- Histogram
+- Scatter Plot
+
+Common Functions:
+- plt.plot()
+- plt.bar()
+- plt.scatter()
+- plt.hist()
+- plt.title()
+- plt.xlabel()
+- plt.ylabel()
+- plt.show()
+
+Example:
+import matplotlib.pyplot as plt
+
+x = [1,2,3]
+y = [4,5,6]
+
+plt.plot(x,y)
+
+plt.show()
+
+Uses in AI:
+- Data visualization
+- Performance analysis
+- Trend analysis
+
+
+4. SEABORN
+------------
+
+Definition:
+Seaborn is an advanced visualization library built on Matplotlib.
+
+Features:
+- Beautiful graphs
+- Statistical visualization
+- Easy syntax
+- Works well with Pandas DataFrames
+
+Types of Graphs:
+- Heatmap
+- Countplot
+- Boxplot
+- Pairplot
+- Scatterplot
+
+Common Functions:
+- sns.scatterplot()
+- sns.heatmap()
+- sns.countplot()
+- sns.boxplot()
+
+Example:
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+tips = sns.load_dataset("tips")
+
+sns.scatterplot(
+    x="total_bill",
+    y="tip",
+    data=tips
+)
+
+plt.show()
+
+Uses in AI:
+- Statistical analysis
+- Correlation visualization
+- Advanced data analysis
+
+
+DIFFERENCE BETWEEN LIBRARIES
+-----------------------------
+
+NumPy      -> Numerical Calculations
+Pandas     -> Data Handling
+Matplotlib -> Basic Visualization
+Seaborn    -> Advanced Visualization
+
+
+AI WORKFLOW
+------------
+
+NumPy
+   ↓
+Pandas
+   ↓
+Matplotlib
+   ↓
+Seaborn
+
+
+ONE-LINE DEFINITIONS
+---------------------
+
+NumPy      -> Numerical Computing Library
+Pandas     -> Data Analysis Library
+Matplotlib -> Graph Plotting Library
+Seaborn    -> Statistical Visualization Library
